@@ -1,0 +1,92 @@
+/*removendo propriedades de todos os elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #B5C0D0, #CCD3CA, #F5E8DD, #EED3D9);
+    background-size: 200% 200%;
+    animation: colors 5s ease infinite;
+}
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.container{
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+.fotoperfil{
+    width: 100%;
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    border: 4px solid rgb(8,8,8);
+    padding: 3px;
+}
+h1{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin: 1%;
+    width: 25vw;
+}
+
+ul li a {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+
+    background: linear-gradient(45deg, #B5C0D0, #CCD3CA, #F5E8DD, #EED3D9);
+    color: black;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 5px;
+
+    transition: background 400ms;
+}
+ul li a:hover{
+    background: white;
+}
+footer{
+    font-weight: 500;
+    font-size: 15px;
+    color: darkgray;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 0 5px;
+}
+footer a {
+    padding: 0 3px;
+    color: black;
+    font-size: 15px;
+}
+
