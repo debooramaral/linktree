@@ -57,6 +57,12 @@ ul li{
     margin: 1%;
     width: 35vw;
 }
+/* responsividade mobile*/
+@media screen and (min-width: 400px) and (max-width: 900px){
+    ul li{
+        width: 100vw;
+    }
+}
 
 ul li a {
     display: flex;
